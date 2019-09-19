@@ -1,0 +1,50 @@
+# SETTING UP ENVIRONMENT
+
+# Create new environment in Python3				
+conda create --name ENVIRONMENT-NAME python=3.5
+
+# Make a copy of an environment					
+conda create --clone ENVIRONMENT-TO-COPY --name ENVIRONMENT-COPIED
+
+# List of all the environments					
+conda env list
+
+# Activate the new environment to use it				
+activate ENVIRONMENT-NAME
+
+# Deactivate the current environment and get back to root 
+env	deactivate
+
+# List all packages in an env					
+conda list
+
+# Save environment to a txt file					
+conda list --explicit > FILENAME.txt
+
+# Create environment from a txt file				
+conda env create --file FILENAME.txt
+
+# Delete an environment and its content				
+conda env remove --name ENVIRONMENT-NAME
+
+# Search for a package						
+conda search PACKAGE-NAME
+
+# Install a new package						
+conda install PACKAGE-NAME
+	numpy
+	scipy
+	seaborn
+	scikit-learn
+	matplotlib
+	jupyter
+	unicodecsv
+	datetime
+
+# Update all packages						
+conda update --all
+
+# LAUNCH NOTEBOOK
+
+# Launch the JN from Anaconda prompt				
+jupyter-notebook URL-TO-COPY-ON-BROWSER
